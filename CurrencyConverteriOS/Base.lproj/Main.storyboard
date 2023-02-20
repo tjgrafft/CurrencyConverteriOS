@@ -156,12 +156,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dai-Eq-GBK">
-                                <rect key="frame" x="176" y="381.33333333333331" width="41.333333333333343" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PFp-Qr-Nxf">
+                                <rect key="frame" x="176" y="381.33333333333337" width="41.333333333333343" height="20.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dai-Eq-GBK">
+                                        <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Y3u-hI-1Ma">
                                 <rect key="frame" x="30" y="551.66666666666663" width="333" height="201.33333333333337"/>
                                 <subviews>
@@ -243,8 +248,8 @@
                             <constraint firstItem="Y3u-hI-1Ma" firstAttribute="centerX" secondItem="Bga-1k-19n" secondAttribute="centerX" id="BFz-mH-Dvf"/>
                             <constraint firstItem="Y3u-hI-1Ma" firstAttribute="leading" secondItem="Bga-1k-19n" secondAttribute="leading" constant="30" id="O0b-Z0-U6W"/>
                             <constraint firstItem="Bga-1k-19n" firstAttribute="bottom" secondItem="Y3u-hI-1Ma" secondAttribute="bottom" constant="30" id="cKm-7m-jYL"/>
-                            <constraint firstItem="dai-Eq-GBK" firstAttribute="centerX" secondItem="BwQ-ku-fYF" secondAttribute="centerX" id="kcc-DQ-WpD"/>
-                            <constraint firstItem="dai-Eq-GBK" firstAttribute="centerY" secondItem="BwQ-ku-fYF" secondAttribute="centerY" id="qDw-02-vgw"/>
+                            <constraint firstItem="PFp-Qr-Nxf" firstAttribute="top" secondItem="Bga-1k-19n" secondAttribute="top" constant="30" id="dYI-ae-rOo"/>
+                            <constraint firstItem="PFp-Qr-Nxf" firstAttribute="centerX" secondItem="BwQ-ku-fYF" secondAttribute="centerX" id="nvB-8z-GlT"/>
                         </constraints>
                     </view>
                     <connections>

@@ -27,7 +27,7 @@ class CurrencyAmountView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        usdLabel.text = "$\(usdFinal)"
+        usdLabel.text = "Amount in USD: $\(usdFinal)"
         euroLabel.text = "\(euroFinal)"
         poundLabel.text = "\(poundFinal)"
         yenLabel.text = "\(yenFinal)"
